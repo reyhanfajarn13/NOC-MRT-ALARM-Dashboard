@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mrt_dashboard/overViewPageCard.dart';
+import 'package:mrt_dashboard/overview/overViewPageCard.dart';
 import 'package:slide_digital_clock/slide_digital_clock.dart';
 
 class overViewPage extends StatefulWidget {

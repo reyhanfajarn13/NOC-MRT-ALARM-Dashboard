@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.10+1
   slide_digital_clock: ^1.0.3
+  animated_background: 2.0.0
 
 dev_dependencies:
   flutter_test:

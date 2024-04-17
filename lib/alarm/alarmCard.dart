@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mrt_dashboard/alarmCardDetails.dart';
+import 'package:mrt_dashboard/alarm/alarmCardDetails.dart';
 
 class alarmCard extends StatefulWidget {
   final String stationName;

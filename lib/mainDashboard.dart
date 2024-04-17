@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:mrt_dashboard/alarmCard.dart';
-import 'package:mrt_dashboard/overviewPage.dart';
+import 'package:mrt_dashboard/alarm/alarmCard.dart';
+import 'package:mrt_dashboard/maps/mapsCard.dart';
+import 'package:mrt_dashboard/overview/overviewPage.dart';
 
 class mainDashboard extends StatefulWidget {
   const mainDashboard({super.key});
@@ -14,6 +15,7 @@ class mainDashboard extends StatefulWidget {
 class _mainDashboardState extends State<mainDashboard> {
   @override
   Widget build(BuildContext context) {
+    Color trackColor = Colors.brown.shade700;
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
@@ -54,18 +56,119 @@ class _mainDashboardState extends State<mainDashboard> {
                   //         child: Image.asset(
                   //           'lib/assets/route_3.png',
                   //         ))),
+                  //TRACK DESIGN
+                  Positioned(
+                      bottom: 120,
+                      left: 55,
+                      child: Container(
+                        height: 50,
+                        width: 50,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      bottom: 240,
+                      left: 55,
+                      child: Container(
+                        height: 55,
+                        width: 50,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      top: 100,
+                      left: 55,
+                      child: Container(
+                        height: 55,
+                        width: 50,
+                        color: trackColor,
+                      )),
+                  // upper
+                  Positioned(
+                      top: 45,
+                      left: 130,
+                      child: Container(
+                        height: 45,
+                        width: 55,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      top: 45,
+                      left: 280,
+                      child: Container(
+                        height: 45,
+                        width: 55,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      top: 45,
+                      left: 400,
+                      child: Container(
+                        height: 45,
+                        width: 55,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      top: 45,
+                      right: 280,
+                      child: Container(
+                        height: 45,
+                        width: 55,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      top: 45,
+                      right: 150,
+                      child: Container(
+                        height: 45,
+                        width: 55,
+                        color: trackColor,
+                      )),
+                  //right
+                  Positioned(
+                      top: 100,
+                      right: 75,
+                      child: Container(
+                        height: 55,
+                        width: 50,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      top: 225,
+                      right: 75,
+                      child: Container(
+                        height: 55,
+                        width: 50,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      bottom: 120,
+                      right: 75,
+                      child: Container(
+                        height: 55,
+                        width: 50,
+                        color: trackColor,
+                      )),
+                  Positioned(
+                      bottom: 60,
+                      right: 150,
+                      child: Container(
+                        height: 45,
+                        width: 55,
+                        color: trackColor,
+                      )),
+
+                  //CARD ALARM
                   Positioned(
                       left: 180,
                       top: 30,
                       child: alarmCard(
-                        stationName: 'Blok M',
+                        stationName: 'Blok A',
                         alarmStatus: 'Critical',
                       )),
                   Positioned(
                       left: 30,
                       top: 30,
                       child: alarmCard(
-                          stationName: 'Blok A', alarmStatus: 'Normal')),
+                          stationName: 'H Nawi', alarmStatus: 'Normal')),
                   Positioned(
                       left: 30,
                       top: 150,
@@ -80,74 +183,53 @@ class _mainDashboardState extends State<mainDashboard> {
                       left: 30,
                       top: 400,
                       child: alarmCard(
-                          stationName: 'H Nawi', alarmStatus: 'Normal')),
+                          stationName: 'Lebak Bulus', alarmStatus: 'Normal')),
                   Positioned(
                       right: 50,
                       top: 30,
                       child: alarmCard(
-                          stationName: 'Lebak Bulus', alarmStatus: 'Critical')),
+                          stationName: 'Istora', alarmStatus: 'Critical')),
                   Positioned(
                       right: 50,
                       top: 150,
                       child: alarmCard(
-                          stationName: 'Bundaran HI', alarmStatus: 'Normal')),
+                          stationName: 'Bendungan Hilir',
+                          alarmStatus: 'Normal')),
                   Positioned(
                       right: 50,
                       top: 280,
                       child: alarmCard(
-                          stationName: 'Dukuh Atas', alarmStatus: 'Minor')),
+                          stationName: 'Setiabudi', alarmStatus: 'Normal')),
                   Positioned(
                       right: 50,
                       top: 400,
                       child: alarmCard(
-                          stationName: 'Bendungan Hilir',
-                          alarmStatus: 'Normal')),
+                          stationName: 'Dukuh Atas', alarmStatus: 'Minor')),
                   Positioned(
                       right: 200,
                       top: 400,
                       child: alarmCard(
-                          stationName: 'Setiabudi', alarmStatus: 'Normal')),
+                          stationName: 'Bundaran HI', alarmStatus: 'Normal')),
                   Positioned(
                       left: 320,
                       top: 30,
                       child: alarmCard(
-                          stationName: 'Sisingamangaraja',
-                          alarmStatus: 'Normal')),
+                          stationName: 'Blok M', alarmStatus: 'Normal')),
                   Positioned(
                       left: 450,
                       top: 30,
                       child: alarmCard(
-                          stationName: 'Senayan', alarmStatus: 'Critical')),
+                          stationName: 'Sisingamangaraja',
+                          alarmStatus: 'Critical')),
                   Positioned(
                       left: 590,
                       top: 30,
                       child: alarmCard(
-                          stationName: 'Istora', alarmStatus: 'Normal')),
+                          stationName: 'Senayan', alarmStatus: 'Normal')),
                   Positioned(
-                      top: 135,
-                      left: 250,
-                      right: 250,
-                      child: Container(
-                        height: size.height * 0.4,
-                        width: size.width * 0.1,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black
-                                    .withOpacity(0.5), // Warna bayangan
-                                spreadRadius: 3, // Radius penyebaran bayangan
-                                blurRadius: 5, // Radius blur bayangan
-                                offset:
-                                    Offset(0, 3), // Perpindahan bayangan (x, y)
-                              ),
-                            ],
-                            image: DecorationImage(
-                                image: AssetImage('lib/assets/download.jpg'),
-                                fit: BoxFit.contain,
-                                opacity: 1)),
-                      ))
+                      top: 135, left: 250, right: 250, child: mapsCard()),
+
+                  //Track design
                 ],
               ),
             ),
