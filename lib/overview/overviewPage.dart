@@ -126,15 +126,21 @@ class _overViewPageState extends State<overViewPage> {
                   SizedBox(
                     height: 15,
                   ),
-                  overviewPageCard(),
+                  overviewPageCard(
+                    header: 'Top Apps',
+                  ),
                   SizedBox(
                     height: 15,
                   ),
-                  overviewPageCard(),
+                  overviewPageCard(
+                    header: 'Tes',
+                  ),
                   SizedBox(
                     height: 15,
                   ),
-                  overviewPageCard(),
+                  overviewPageCard(
+                    header: 'Tes',
+                  ),
                   SizedBox(
                     height: 15,
                   ),
@@ -145,7 +151,7 @@ class _overViewPageState extends State<overViewPage> {
                         width: size.width * 0.085,
                         height: size.height * 0.15,
                         decoration: BoxDecoration(
-                          color: Colors.orange,
+                          color: Colors.red.shade900,
                           borderRadius: BorderRadius.circular(
                               10), // Mengatur sudut bulat dengan radius 10
                         ),
@@ -159,7 +165,22 @@ class _overViewPageState extends State<overViewPage> {
                                   decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(10)),
-                                  child: Text('Saya')),
+                                  child: Center(
+                                      child: Text('Critical',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold)))),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                child: Text(
+                                  '200k',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24),
+                                ),
+                              )
                             ],
                           ),
                         ),
@@ -169,7 +190,7 @@ class _overViewPageState extends State<overViewPage> {
                         width: size.width * 0.085,
                         height: size.height * 0.15,
                         decoration: BoxDecoration(
-                          color: Colors.orange,
+                          color: Colors.deepOrange,
                           borderRadius: BorderRadius.circular(
                               10), // Mengatur sudut bulat dengan radius 10
                         ),
@@ -183,7 +204,22 @@ class _overViewPageState extends State<overViewPage> {
                                   decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(10)),
-                                  child: Text('Saya')),
+                                  child: Center(
+                                      child: Text('Major',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold)))),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                child: Text(
+                                  '200k',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24),
+                                ),
+                              )
                             ],
                           ),
                         ),
@@ -193,7 +229,7 @@ class _overViewPageState extends State<overViewPage> {
                         width: size.width * 0.085,
                         height: size.height * 0.15,
                         decoration: BoxDecoration(
-                          color: Colors.orange,
+                          color: Colors.orange.shade600,
                           borderRadius: BorderRadius.circular(
                               10), // Mengatur sudut bulat dengan radius 10
                         ),
@@ -207,7 +243,24 @@ class _overViewPageState extends State<overViewPage> {
                                   decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(10)),
-                                  child: Text('Saya')),
+                                  child: Center(
+                                      child: Text(
+                                    'Minor',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ))),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Container(
+                                child: Text(
+                                  '200k',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24),
+                                ),
+                              )
                             ],
                           ),
                         ),
